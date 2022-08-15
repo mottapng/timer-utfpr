@@ -1,0 +1,47 @@
+.timer-container {
+  min-width: 820px;
+  border: 2px solid #EEEEF2;
+  padding: 40px 0;
+}
+
+.clock {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+}
+
+.clock p {
+  font-size: 108px;
+  font-weight: 300;
+  letter-spacing: 2px;
+}
+
+.clock small {
+  font-size: 16px;
+  font-weight: 300;
+}
+
+.clock span {
+  font-size: 40px;
+}
+
+.clock div:not(.days-container) {
+  width: 134px;
+}
+
+@media screen and (max-width: 900px) {
+  .timer-container {
+    min-width: inherit;
+    padding: 40px;
+  }
+
+  .clock {
+    flex-direction: column;
+    gap: 40px;
+  }
+
+  .clock span {
+    display: none
+  }
+}
