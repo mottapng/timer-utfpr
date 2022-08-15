@@ -61,7 +61,7 @@ function App() {
       />
       <div className="App__info">
         <h2>Nosso progresso está em <span>{percentage}%</span></h2>
-        <ProgressBar done={70} />
+        <ProgressBar done={percentage} />
       </div>
     </div>
   );
